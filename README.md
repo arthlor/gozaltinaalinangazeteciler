@@ -1,23 +1,28 @@
-# Tutuklanan Gazeteciler
+# Gazetecileri Serbest Bırakın
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://arthlor.github.io/gozaltinaalinangazeteciler)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Türkiye'de son dönem protestolarında tutuklanan gazetecilerin bilgilerini gösteren bir web sitesi.
+Bu proje, İstanbul Büyükşehir Belediye Başkanı Ekrem İmamoğlu’nun gözaltına alınması sonrası yaşanan protesto eylemlerini takip ettiği için gözaltına alınan ve tutuklanan gazetecilerle dayanışma için oluşturulmuş bir internet sitesidir.
 
-# Eylemlerde Gözaltına Alınan ve Tutuklanan Gazeteciler
+## ✨ Özellikler
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://arthlor.github.io/gozaltinaalinangazeteciler)
+- 🎨 Modern ve duyarlı tasarım
+- 🚨 Gazeteci durumlarına göre renk kodlaması (Tutuklu: Kırmızı, Gözaltında: Yeşil)
+- 🔍 Arama ve filtreleme özellikleri
+- 📇 Detaylı gazeteci kartları
+- 📱 Mobil uyumlu tasarım
 
-Türkiye'de Saraçhane ve diğer illerdeki protestolarda gözaltına alınan ve tutuklanaan gazetecilerin bilgilerini gösteren bir web sitesi.
+## 🛠️ Kullanılan Teknolojiler
 
-## Özellikler
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=flat&logo=font-awesome&logoColor=white)
 
-- Modern ve duyarlı tasarım
-- Gazetecilerin bilgilerini kart şeklinde gösterme
-- Yükleme durumu ve hata yönetimi
-- Mobil uyumlu arayüz
+## 🚀 Geliştirme
 
-## Kurulum
+### Yerel Kurulum
 
 1. Depoyu klonlayın:
    ```bash
@@ -27,25 +32,15 @@ Türkiye'de Saraçhane ve diğer illerdeki protestolarda gözaltına alınan ve 
    ```bash
    cd gozaltinaalinangazeteciler
    ```
-3. Tarayıcıda açın:
-   ```bash
-   python3 -m http.server 8000
-   ```
-   Sonra tarayıcınızda `http://localhost:8000` adresine gidin.
+3. Tarayıcıda `index.html` dosyasını açın
 
-## Katkıda Bulunma
+## 🤝 Katkıda Bulunma
 
-Katkıda bulunmak isterseniz:
+Katkıda bulunmak için lütfen bir issue açın veya pull request gönderin. Katkılarınızı bekliyoruz!
 
-1. Bu depoyu forklayın
-2. Yeni bir branch oluşturun (`git checkout -b yeni-ozellik`)
-3. Değişikliklerinizi yapın ve commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inize push yapın (`git push origin yeni-ozellik`)
-5. Pull Request oluşturun
+## 📄 Lisans
 
-## Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## Canlı Demo
 
