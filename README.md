@@ -4,6 +4,12 @@
 
 Türkiye'de son dönem protestolarında tutuklanan gazetecilerin bilgilerini gösteren bir web sitesi.
 
+# Eylemlerde Gözaltına Alınan ve Tutuklanan Gazeteciler
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://arthlor.github.io/gozaltinaalinangazeteciler)
+
+Türkiye'de Saraçhane ve diğer illerdeki protestolarda gözaltına alınan ve tutuklanaan gazetecilerin bilgilerini gösteren bir web sitesi.
+
 ## Özellikler
 
 - Modern ve duyarlı tasarım
