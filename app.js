@@ -152,4 +152,8 @@ function loadJournalists() {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadJournalists();
+  document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    const filters = document.getElementById('mobile-filters');
+    filters.classList.toggle('hidden');
+  });
 });

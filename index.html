@@ -26,25 +26,45 @@
 <body class="bg-gray-100">
   <header class="bg-white shadow-sm">
     <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between py-4">
-        <div class="flex items-center space-x-3">
-          <i class="fas fa-newspaper text-2xl text-gray-700"></i>
-          <h1 class="text-xl font-medium text-gray-800">
-            Gazetecileri Serbest Bırakın
-          </h1>
+      <!-- Mobile Top Row -->
+      <div class="flex items-center justify-between py-3 md:hidden">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-newspaper text-xl text-gray-700"></i>
+          <h1 class="text-lg font-medium text-gray-800">Gazetecileri Serbest Bırakın</h1>
         </div>
-        <div class="flex items-center space-x-4">
-          <div class="relative w-40">
+        <button id="mobile-menu-button" class="p-2 text-gray-600 hover:text-gray-900">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Desktop & Mobile Content -->
+      <div class="md:flex md:items-center md:justify-between py-2 md:py-4">
+        <!-- Logo Section - Hidden on mobile -->
+        <div class="hidden md:flex items-center space-x-3">
+          <i class="fas fa-newspaper text-2xl text-gray-700"></i>
+          <h1 class="text-xl font-medium text-gray-800">Gazetecileri Serbest Bırakın</h1>
+        </div>
+
+        <!-- Filters and Search - Mobile Collapsible -->
+        <div id="mobile-filters" class="hidden md:block w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4">
+          <!-- Search Bar -->
+          <div class="relative w-full md:w-64">
+            <input type="text" id="search" class="w-full pl-8 pr-3 py-2 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 hover:border-gray-300 transition-all" placeholder="İsim veya konum ara...">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+              <i class="fas fa-search text-gray-400"></i>
+            </div>
+          </div>
+
+          <!-- Status Filter -->
+          <div class="relative w-full md:w-48">
             <select id="status-filter" class="w-full pl-8 pr-3 py-2 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 appearance-none bg-white hover:border-gray-300 transition-all">
               <option value="all">Tümü</option>
               <option value="Tutuklu">Tutuklu</option>
               <option value="Gözaltında">Gözaltında</option>
             </select>
-            <i class="fas fa-filter absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none"></i>
-          </div>
-          <div class="relative w-56">
-            <input type="text" id="search" class="w-full pl-8 pr-3 py-2 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 hover:border-gray-300 transition-all" placeholder="İsim veya konum ara...">
-            <i class="fas fa-search absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none"></i>
+            <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+              <i class="fas fa-filter text-gray-400"></i>
+            </div>
           </div>
         </div>
       </div>
