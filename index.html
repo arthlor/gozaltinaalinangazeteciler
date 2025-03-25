@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Türkiye'de eylemlerde tutuklanan gazeteciler hakkında bilgi">
   <title>Tutuklanan Gazeteciler</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome and Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
-    <div class="container">
+    <div class="container nav-container">
       <div class="nav-brand">
         <i class="fas fa-newspaper"></i>
         <h1>Tutuklanan Gazeteciler</h1>
@@ -24,42 +26,32 @@
   </nav>
   
   <main class="container">
-    <div class="filters">
+    <section class="filters">
       <button class="filter-btn active" data-filter="all">Tümü</button>
       <button class="filter-btn" data-filter="Tutuklu">Tutuklu</button>
-      <button class="filter-btn" data-filter="Serbest">Serbest</button>
-    </div>
+      <button class="filter-btn" data-filter="Gözaltında">Gözaltında</button>
+    </section>
 
-    <div id="loading">
+    <section class="info-section">
+      <p>İstanbul Büyükşehir Belediye Başkanı Ekrem İmamoğlu’nun gözaltına alınması sonrası yaşanan protesto eylemlerini takip ettiği için gözaltına alınan ve tutuklanan gazetecilerle dayanışma için oluşturulmuş internet sitesi.</p>
+    </section>
+
+    <section id="loading">
       <div class="spinner"></div>
       <p>Yükleniyor...</p>
-    </div>
+    </section>
 
-    <div id="journalist-container"></div>
+    <section id="journalist-container" class="cards-container"></section>
   </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>İletişim</h3>
-          <p>info@basinözgürlüğü.org</p>
-          <p>+90 212 123 45 67</p>
-        </div>
-        <div class="footer-section">
-          <h3>Bağlantılar</h3>
-          <a href="#">Hakkımızda</a>
-          <a href="#">Destek Ol</a>
-          <a href="#">Gizlilik Politikası</a>
-        </div>
-      </div>
+    <div class="container footer-container">
       <div class="copyright">
-        <p> 2025 Basın Özgürlüğü İnisiyatifi. Tüm hakları saklıdır.</p>
+        <p>2025 Basın Özgürlüğü İnisiyatifi.</p>
       </div>
     </div>
   </footer>
 
-  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
