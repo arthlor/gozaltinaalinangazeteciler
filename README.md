@@ -3,11 +3,9 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://arthlor.github.io/gozaltinaalinangazeteciler)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<<<<<<< HEAD
+
 Bu proje, İstanbul Büyükşehir Belediye Başkanı Ekrem İmamoğlu’nun gözaltına alınması sonrası yaşanan protesto eylemlerini takip ettiği için gözaltına alınan ve tutuklanan gazetecilerle dayanışma için oluşturulmuş bir internet sitesidir.
-=======
-Saraçhane protestolarında tutuklanan ve gözaltına alınan gazetecilerin bilgilerini gösteren bir web sitesi.
->>>>>>> a64ec9c47d34637cef8a3f227ecb95cedc6769d8
+
 
 ## ✨ Özellikler
 
