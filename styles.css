@@ -1,82 +1,341 @@
 :root {
-  --primary-color: #1a73e8;
-  --secondary-color: #202124;
-  --text-color: #333;
-  --bg-color: #f8f9fa;
-  --card-bg: #fff;
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --text-color: #34495e;
+  --bg-color: #ecf0f1;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding-top: 60px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 20px;
 }
 
 nav {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
 }
 
-nav h1 {
+.nav-brand {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-brand i {
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 15px;
+}
+
+.nav-brand h1 {
+  color: white;
   margin: 0;
   font-size: 1.5rem;
 }
 
+.search-container {
+  position: relative;
+  margin: 15px 0;
+  max-width: 400px;
+}
+
+#search {
+  width: 100%;
+  padding: 12px 40px 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+#search:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.3);
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+}
+
+.filters {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #dfe6e9;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background: var(--secondary-color);
+  color: white;
+}
+
 #loading {
   text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: #e74c3c;
+  padding: 1rem;
+  background: #f8d7da;
+  border-radius: 4px;
 }
 
 #journalist-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
 }
 
 .card {
   background: var(--card-bg);
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.card h2 {
-  margin-top: 0;
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-color);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.journalist-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.journalist-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-arrested {
+  background-color: #ffe6e6;
+  color: #c0392b;
+}
+
+.status-released {
+  background-color: #e6f4ea;
+  color: #27ae60;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.info-item i {
+  width: 1.25rem;
+  text-align: center;
+}
+
+.timeline {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.timeline-item i {
   color: var(--primary-color);
 }
 
+.card h2 {
+  margin: 0 0 15px 0;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
 .card p {
-  margin: 0.75rem 0;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card i {
+  width: 20px;
+  color: var(--secondary-color);
+}
+
+.social-sharing {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+}
+
+.social-sharing a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-sharing a:hover {
+  color: var(--secondary-color);
 }
 
 footer {
-  background-color: var(--secondary-color);
-  color: #fff;
+  background: var(--primary-color);
+  color: white;
+  margin-top: 50px;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.footer-section a:hover {
+  opacity: 1;
+}
+
+.copyright {
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-  #journalist-container {
-    grid-template-columns: 1fr;
+  .nav-brand h1 {
+    font-size: 1.2rem;
+  }
+
+  #search {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 15px;
   }
 }
