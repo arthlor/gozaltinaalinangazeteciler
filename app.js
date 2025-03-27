@@ -94,7 +94,7 @@ function createJournalistCard(journalist) {
           <i class="fas fa-calendar-alt"></i>
           <span>${journalist.status}</span>
         </div>
-        ${journalist.status === 'Serbest bırakıldı' && journalist.releasedDate && journalist.name !== 'Yağız Barut' ? `
+        ${journalist.status === 'Serbest bırakıldı' && journalist.releasedDate && journalist.name !== 'Yağız Barut' && journalist.name !== 'Zişan Gür' ? `
           <div class="timeline-item">
             <i class="fas fa-calendar-check"></i>
             <span>Serbest Bırakıldı</span>
@@ -110,6 +110,7 @@ function createJournalistCard(journalist) {
       ${journalist.name === 'Zişan Gür' ? `
         <div class="legal-info">
           <p>MLSA'dan yapılan açıklamada, Saraçhane’de protestoları takip ederken gözaltına alınan sendika.org muhabiri Zişan Gür'ün gözaltında burnunun kırıldığı bildirildi.</p>
+          <p>19 Mart sonrası eylemleri takip ettiği için 24 Mart'ta gözaltına alınan gazetecilerden Sendika.org muhabiri Zişan Gür, hakimlik sorgusunun ardından imza adli kontrol tedbiri ve yurt dışı çıkış yasağı ile serbest bırakıldı.</p>
         </div>
       ` : ''}
       ${journalist.name === 'Yağız Barut' ? `

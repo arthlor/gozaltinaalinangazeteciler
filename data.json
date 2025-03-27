@@ -67,10 +67,11 @@
   {
     "name": "Zişan Gür",
     "location": "İstanbul",
-    "status": "Gözaltında",
+    "status": "Serbest bırakıldı",
     "organization": "Sendika.org",
-    "arrestedDate": "2023-05-15",
-    "releasedDate": "2023-05-16",
+    "arrestedDate": "2023-03-24",
+    "releasedDate": "2025-03-27",
+    "details": "19 Mart sonrası eylemleri takip ettiği için 24 Mart'ta gözaltına alınan gazetecilerden Sendika.org muhabiri Zişan Gür, hakimlik sorgusunun ardından imza adli kontrol tedbiri ve yurt dışı çıkış yasağı ile serbest bırakıldı.",
     "image": "images/zisan-gur.jpg"
   },
   {
