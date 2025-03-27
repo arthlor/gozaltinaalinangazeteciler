@@ -58,10 +58,11 @@
   {
     "name": "Barış İnce",
     "location": "İzmir",
-    "status": "Gözaltında",
+    "status": "Serbest Bırakıldı",
     "organization": "BirGün",
     "arrestedDate": "2023-05-15",
-    "releasedDate": "2023-05-16",
+    "releasedDate": "2025-03-27",
+    "details": "İzmir'de 24 Mart Pazartesi günü gözaltına alınan BirGün yazarı Barış İnce, savcılık tarafından serbest bırakıldı.",
     "image": "images/baris-ince.jpg"
   },
   {
@@ -77,10 +78,11 @@
   {
     "name": "Murat Kocabaş",
     "location": "İzmir",
-    "status": "Gözaltında",
+    "status": "Serbest Bırakıldı",
     "organization": "Foto Muhabiri",
     "arrestedDate": "2023-05-15",
-    "releasedDate": "2023-05-16",
+    "releasedDate": "2025-03-27",
+    "details": "İzmir'de 24 Mart Pazartesi günü gözaltına alınan BirGün yazarı Barış İnce, savcılık tarafından serbest bırakıldı.",
     "image": "images/murat-kocabas.jpg"
   },
   {

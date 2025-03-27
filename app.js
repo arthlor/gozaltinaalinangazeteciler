@@ -105,6 +105,7 @@ function createJournalistCard(journalist) {
       ${journalist.name === 'Murat Kocabaş' ? `
         <div class="legal-info">
           <p>İstanbul Büyükşehir Belediye Başkanı Ekrem İmamoğlu’nun da aralarında bulunduğu 48 kişinin tutuklanmasını protesto edenlere yönelik düzenlenen operasyonda foto muhabiri Murat Kocabaş gözaltına alındı.</p>
+          <br><p>İzmir'de 24 Mart Pazartesi günü gözaltına alınan Murat Kocabaş, savcılık tarafından serbest bırakıldı.</p>
         </div>
       ` : ''}
       ${journalist.name === 'Zişan Gür' ? `
@@ -122,6 +123,7 @@ function createJournalistCard(journalist) {
         <div class="legal-info">
           <p>İstanbul Büyükşehir Belediye Başkanı ve Cumhurbaşkanı adayı Ekrem İmamoğlu'nun gözaltına alınmasına dair eylemlere katılanlara ve gazetecilere sabah saatlerinde ev baskınları gerçekleştirildi.</p>
           <p>Birgün yazarı Barış İnce and eşi Sevil İnce gözaltına alındı. Sevil İnce daha sonra serbest bırakıldı.</p>
+          <br><p>İzmir'de 24 Mart Pazartesi günü gözaltına alınan BirGün yazarı Barış İnce, savcılık tarafından serbest bırakıldı.</p>
         </div>
       ` : ''}
       ${journalist.name === 'Bülent Kılıç' ? `

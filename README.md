@@ -10,7 +10,6 @@ Bu proje, İstanbul Büyükşehir Belediye Başkanı Ekrem İmamoğlu’nun göz
 ## ✨ Özellikler
 
 - 🎨 Modern ve duyarlı tasarım
-- 🚨 Gazeteci durumlarına göre renk kodlaması (Tutuklu: Kırmızı, Gözaltında: Yeşil)
 - 🔍 Arama ve filtreleme özellikleri
 - 📇 Detaylı gazeteci kartları
 - 📱 Mobil uyumlu tasarım
