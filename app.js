@@ -179,6 +179,21 @@ function createJournalistCard(journalist) {
   return card;
 }
 
+// Track search events
+function trackSearch(query) {
+  gtag('event', 'search', {
+    search_term: query
+  });
+}
+
+// Track filter events
+function trackFilter(filterType, value) {
+  gtag('event', 'filter', {
+    filter_type: filterType,
+    filter_value: value
+  });
+}
+
 function loadJournalists() {
   fetch('data.json')
     .then(response => response.json())
@@ -220,9 +235,11 @@ function loadJournalists() {
         statusFilter.appendChild(optionElement);
       });
       searchInput.addEventListener('input', debounce(() => {
+        trackSearch(searchInput.value);
         filterJournalists(searchInput.value, statusFilter.value, data);
       }, 300));
       statusFilter.addEventListener('change', () => {
+        trackFilter('status', statusFilter.value);
         filterJournalists(searchInput.value, statusFilter.value, data);
       });
     })
